@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Caso de Uso - Kendall</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 40px;
+    background: #eef2f7;
+}
+
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+textarea, input {
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+button {
+    padding: 12px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* PDF limpio */
+@media print {
+    button {
+        display: none;
+    }
+    body {
+        background: white;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>Plantilla de Caso de Uso</h1>
+
+<!-- ================= DIAGRAMA ================= -->
+<h2>Diagrama de Caso de Uso (UML)</h2>
+
+<hr>
+
+<!-- ================= PLANTILLA ================= -->
+<h2>Descripción del Caso de Uso</h2>
+
+<label>Nombre del Caso de Uso:</label>
+<input type="text" placeholder="Ej: Iniciar sesión">
+
+<label>Actor(es):</label>
+<input type="text" placeholder="Ej: Usuario">
+
+<label>Descripción:</label>
+<textarea rows="3" placeholder="Describe el objetivo"></textarea>
+
+<label>Precondiciones:</label>
+<textarea rows="3" placeholder="Condiciones previas"></textarea>
+
+<label>Flujo Principal:</label>
+<textarea rows="5" placeholder="Paso 1, Paso 2..."></textarea>
+
+<label>Flujos Alternativos:</label>
+<textarea rows="5" placeholder="Errores o variaciones"></textarea>
+
+<label>Postcondiciones:</label>
+<textarea rows="3" placeholder="Resultado final"></textarea>
+
+<label>Reglas de Negocio:</label>
+<textarea rows="3" placeholder="Restricciones"></textarea>
+
+<br>
+
+<button onclick="window.print()"> Exportar a PDF</button>
+
+</div>
+
+</body>
+</html>
